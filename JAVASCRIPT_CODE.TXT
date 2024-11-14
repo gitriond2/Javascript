@@ -1,0 +1,564 @@
+#MOSTRAR CONTENIDO PRINT
+console.log("hola mundo") 
+
+// Este es un comentario de una línea
+/* Este es un comentario  de varias lineas*/
+
+console.log(3 + 3)		el print puede realizar calculos
+// 	se puede realizar operaciones con variables
+
+forma de estructura javascript
+resultado = 17 + 15; console.log(resultado);
+
+// resoluciones del print javascript
+console.log("hola") /* Aquí se muestra el texto hola */
+console.log(hola) /* Aquí se muestra el valor de la variable hola */
+console.log(2) /* Aquí se muestra el número 2 */
+
+// puede distinguir entre un dato y un string, cuando difieren lo agrega nomas y si es dato opera
+console.log("a es mayor que b: " + c)
+
+//puede hacer comparaciones y que se guarde el booleano en una variable
+me_alcanza = dinero == costo
+
+//setencia if
+if (edad >= 18) 
+  console.log("La edad es mayor o igual a 18")
+
+// estructura del if else
+if (condición) {
+  // Conjunto de instrucciones si la condición se cumple
+} else if (){
+  // Conjunto de instrucciones si la condición se cumple
+} else {
+  // Conjunto de instrucciones si la condición no se cumple
+}
+
+//if ternario
+condicion ? expresion1 : expresion2
+codigo == "1234" ? console.log("Código correcto") : console.log("Código incorrecto")
+mensaje = edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad"
+--------------------------
+// definicion de Funcion
+function saludar(parametro) {
+  console.log("Hola Mundo")
+}
+saludar(parametro);			//llamarlo con valor asignado puede ser sin el mismo
+-----------------------------
+//return		puede devolver operaciones matematicas	finaliza la ejecucion de funcion 		tambien puede concatenar de manera "" + numero
+return elemento[0]		para devolver arrays en posicion
+
+
+let mensaje = [];			//obtiene sistema de array
+
+return mensaje.push("Te falta el celular"); // Cambié 'append' a 'push'
+ 
+//operadores && (and)	|| (or)		!var (not)
+
+//switch
+switch (opcion) {
+  case 1:
+    console.log("Hamburguesa");
+    break;
+  case 2: ....
+  default:
+  console.log("Opción inválida");
+}
+
+// conversion a mayusculas  y minusculas
+texto.toUpperCase()				mayusculas
+texto.toLowerCase()				minusculas
+
+// limpiando espacios innecesarios al inicio y al final de una cadena de texto.
+texto.trim()					quita los espacios de inicio y finales
+
+// contando la cadena de lugares que tiene un array
+texto.length
+
+//Podemos obtener una parte del texto original utilizando el método substring y especificando el índice de inicio y fin de la cadena de texto.
+texto1 = texto.substring(0, 4)			tenes que guardarlo
+	hasta el final del texto, podemos omitir el segundo parámetro.
+texto.substring(2)
+	devuelve el maximo y el ultimo conta hacia atras
+url.substring(largo - 4)
+
+// constante de estructura que no permite modificacion de como esta armada pero los parametros se les puede asignar
+const mezcla = palabra1.slice(0, mitad1) + palabra2.slice(mitad2);
+
+//arrays 	
+variable[]
+variable[variable.length - 1]		para obtener la ultima posicion del array
+variable.push("Maria")				agrega un nuevo elemento al array
+arreglo[1] = "Maria" 				reemplaza el segundo elemento del arreglo por "Maria".
+arreglo[3] += 2 					suma 2 al cuarto elemento del arreglo.
+arreglo.pop();						elimina un elemento
+arreglo.shift();					elimina y copia
+arreglo1.concat(arreglo2)			agrega una cadena a otra podes hacerlo con +
+arreglo = [variable]				crear un arreglo con un solo elemento usando corchetes
+arr1.concat(valor, arr2)			arreglos de varias variables
+arreglo.startsWith()				devuelve el primer caracter de valor
+
+
+
+// eliminando y modificando por splice
+arreglo.splice(pos, pos) 				elimina por posicion
+Podemos borrar elementos de un array utilizando el método splice().
+El método splice() modifica el array original.
+
+//const nose que es exactamente pero define una variable
+
+//let  	nose que es exactamente pero define una variable
+
+//ciclos
+for (let i = ; i <= numero; i++) {
+        console.log(i);
+    }
+while (contador <= 8) {				le falta el let contador
+  console.log(contador)
+  contador++
+}
+
+//transformacion de valor 
+b = Number(a)			convierte un valor en numero
+
+//El método split, que significa "separar" en español, es una función de los strings que convierte un string en un arreglo.
+texto.split(" ")
+
+//Si el resultado es verdadero, entonces el dato no es un número.
+if (!isNaN(dato)) {
+  suma += datos[i]
+}
+
+
+//tipos de parse
+parseInt(var)
+parseFloat(var)
+
+// filtra de una variable el infito neg o cero hasta el limite que das
+filtrarMenores(a, 3)
+
+
+//Utilizamos el método map para crear un nuevo arreglo
+var.map(var => var * valor)				puede ser una operacion matematica
+
+//Usamos el método filter para retornar solo aquellos precios que son
+var.filter(precio => precio > 1000)
+
+//Un objeto es una colección de pares clave-valor. 			key: value
+estudiante = {"nombre": "Juan", "edad": 25};
+console.log(estudiante["nombre"]); // Juan		recuperar valor
+estudiante.nombre								recuperar valor
+objeto.hasOwnProperty(variable)					comprueba si el objeto contiene la clave especificada.
+objeto[clave] = nuevoValor;						agrega un nuevo valor al puntero clave
+delete catalogo['clave'];						elimina clave :valor
+variable2 = Object.values(variable1);			Podemos obtener todos los valores de un objeto
+let productos = Object.keys(precios);			Podemos obtener todas las claves de un objeto
+
+
+
+//cuando se asigna un valor a una variable sin declararla explícitamente, esta se convierte en una variable global. Esto significa que puede ser accedida desde cualquier parte del código, incluso dentro de funciones
+En JavaScript, cuando no se usa una palabra clave para declarar una variable (como var, let, o const), la variable se convierte automáticamente en global.
+
+//let introduce el concepto de alcance de bloque. Esto significa que las variables declaradas con let solo son accesibles dentro del bloque en el que se declaran (como dentro de un if, un for, o simplemente entre llaves {}).
+
+
+//  const se usa para declarar variables cuyo valor no cambiará (constantes).
+    Las variables declaradas con const deben ser inicializadas en el momento de la declaración.
+    No se puede reasignar un nuevo valor a una variable const.
+    const tiene alcance de bloque, al igual que let.
+
+
+// Callbacks
+function paso1(callback) {
+    console.log("Paso 1 completado");
+    callback();
+}
+function paso2() {
+    console.log("Paso 2 completado");
+}
+paso1(paso2);
+
+
+// Función anónima como argumento es una función que ejecuta un bloque de código después de que haya transcurrido un tiempo especificado
+setTimeout(function() {
+    console.log("Este mensaje aparece después de 2 segundos");
+}, 2000);
+
+
+// funciones flecha	
+const convertirMayusculas = text => text.toUpperCase();
+const saludoBot = () => {}
+
+//La zona de muerte temporal se produce entre la declaración y la inicialización de una variable let o const. Durante este período, la variable existe pero no se puede acceder a ella. Mientras que con var la variable se inicializa con undefined.
+
+
+//try catch
+try {
+  console.log(x)
+} catch (e) {
+  console.log(e.message)
+}
+
+//En este caso, copiaLista es una lista independiente de listaOriginal, por lo que las modificaciones en una no afectan a la otra.
+const listaModificada = [...listaOriginal];
+const objetoModificado = {...objetoOriginal};
+Para realizar copias profundas, se pueden usar métodos como JSON.parse(JSON.stringify()) o bibliotecas especializadas.
+const deepCopy = JSON.parse(JSON.stringify(original));
+
+
+//prefijos
+function agregarPrefijo(palabras, prefijo) {
+    return palabras.map(palabra => `${prefijo} ${palabra}`);
+}
+
+
+// propiedades del filtrer()
+	Filtrar números pares
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const pares = numeros.filter(numero => numero % 2 === 0);
+console.log(pares); // [2, 4, 6, 8, 10]
+	Filtrar strings por longitud
+const palabras = ["sol", "luna", "estrella", "cometa", "galaxia"];
+const palabrasLargas = palabras.filter(palabra => palabra.length > 5);
+console.log(palabrasLargas); // ["estrella", "galaxia"]
+
+
+//
+
+
+
+
+
+
+-------------------------problema
+function revisarAntesDeSalir(llaves, celular) {
+    let mensaje = []; // Cambié 'mensaje =' a 'let mensaje = [];' para inicializar un arreglo.
+    
+    if (llaves == 'No') {
+        mensaje.push("Te falta las llaves"); // Cambié 'append' a 'push'
+    }
+
+    // Este if está anidado dentro del primero
+    if (llaves == 'Si') {
+        if (celular == 'No') {
+            mensaje.push("Te falta el celular"); // Cambié 'append' a 'push'
+        }
+    }
+
+    if (mensaje.length === 0) { // Cambié 'not mensaje' a 'mensaje.length === 0'
+        return "Todo listo, puedes salir de casa";
+    }
+    
+    return mensaje.join('. '); // Cambié '.join' por 'join'
+}
+-------------------------------------- fin
+
+-------------------------------problema
+function espejo(texto) {
+    // Calcular la longitud de la mitad del texto
+    const longitud = texto.length;
+
+    // Verificar si la longitud es par para poder dividirlo en dos partes iguales
+    if (longitud % 2 !== 0) {
+        return false; // No puede ser igual si la longitud es impar
+    }
+
+    // Dividir el texto en dos mitades
+    const mitad = longitud / 2;
+    const primeraMitad = texto.slice(0, mitad);
+    const segundaMitad = texto.slice(mitad);
+
+    // Comparar las dos mitades
+    return primeraMitad === segundaMitad;
+}
+---------------------------------------fin
+
+
+----------------------- elemento ultimo al principio
+function rotarALaDerecha(arr) {
+    // Eliminar el último elemento del arreglo y guardarlo
+    const ultimoElemento = arr.pop();
+    // Insertar el último elemento al inicio del arreglo
+    arr.unshift(ultimoElemento);
+    return arr;
+}
+--------------------------------resuelto
+
+-------------------------------recorrido de arreglos
+for (indice = 0; indice < nombres.length; indice = indice + 1) {
+  console.log(nombres[indice])
+}
+-------------------------------resuelto
+
+------------------------------ promedio en array
+function promediarDatos(arr) {
+    let suma = 0; // Inicializamos la variable suma en 0
+    let cantidad = 0; // Inicializamos la variable cantidad en 0
+
+    for (let i = 0; i < arr.length; i++) {
+        // Convertimos el elemento a número y lo sumamos
+        suma += Number(arr[i]); 
+        cantidad++; // Contamos cada elemento
+    }
+
+    const promedio = suma / cantidad; // Calculamos el promedio
+    console.log(promedio); // Mostramos el promedio en consola
+}
+--------------------------------------resuelto
+
+------------------------metodo split recorrido de documentacion
+texto = "Hola Mundo"
+arreglo = texto.split(" ")
+console.log(arreglo) // ["Hola", "Mundo"]
+									caso 2
+coordenadas = "70.82323,-33.12312"
+arreglo = coordenadas.split(",")
+console.log(arreglo) // ["70.82323", "-33.12312"]
+---------------------------------resuelto
+
+-----------------------------uso del NaN para valores no numericos
+function retornarPrimerNumero(arr) {
+    // Iteramos sobre el arreglo
+    for (let i = 0; i < arr.length; i++) {
+        // Convertimos el elemento a número
+        const num = Number(arr[i]);
+        
+        // Verificamos si el elemento es un número y no es NaN
+        if (!isNaN(num)) {
+            console.log(num); // Mostramos el primer número encontrado
+            return; // Salimos de la función después de encontrar el primer número
+        }
+    }
+    
+    console.log("No se encontró un número."); // Mensaje en caso de que no se encuentre un número
+}
+------------------------------------resuelto
+
+--------------------------------problema de pesos
+function calcularCostoTotal(pesos){
+ let costoTotal = 0
+ let suma = 0
+    for(i=0; i < pesos.length; i++){
+        let peso = parseInt(pesos[i]);
+        let costo = 0
+        if(peso < 1 ){ costo = 1;}
+        else if(peso >= 1 && peso < 2) {costo = 2;}
+        else if(peso >=2 && peso < 3) {costo = 3;}
+        else if(peso >=3 && peso < 4 ) {costo = 4;}
+    suma += costo;
+    costoTotal = suma
+ }
+console.log(costoTotal)
+}
+-----------------------------------resuelto
+
+----------------------------filtrado mayores agrega
+function filtrarMayoresA(arreglo, numero) {
+  // Crear un nuevo arreglo para almacenar los números filtrados
+  const resultado = [];
+
+  // Iterar sobre cada número en el arreglo
+  for (let i = 0; i < arreglo.length; i++) {
+    // Comprobar si el número es menor que el límite
+    if (arreglo[i] > numero) {
+      // Agregar el número al nuevo arreglo
+      resultado.push(arreglo[i]);
+      
+    }
+    
+  }
+
+  // Retornar el nuevo arreglo con los números filtrados
+  return resultado;
+}
+----------------------------------resuelto
+
+----------------------------------------datos errados correccion
+function filtrarDatosErrados(datos) {
+  // Crear un nuevo arreglo para almacenar las cadenas válidas
+  const datosFiltrados = [];
+
+  // Iterar sobre cada cadena en el arreglo
+  for (let i = 0; i < datos.length; i++) {
+    // Comprobar si la cadena no comienza con '2' y tiene exactamente 8 caracteres
+    if (!datos[i].startsWith('2') && datos[i].length === 8) {
+      // Agregar la cadena al nuevo arreglo
+      datosFiltrados.push(datos[i]);
+    }
+  }
+
+  // Retornar el nuevo arreglo con las cadenas válidas
+  return datosFiltrados;
+}
+-------------------------------resuelto
+
+----------------------------ticket con aumento o descuento
+function transformarYreducir(productos) {
+  let resultado = 0;
+
+  for (let i = 0; i < productos.length; i++) {
+    let valorTransformado = productos[i] * 1.2; // aumento del 20%
+    //console.log(`Precio original: ${productos[i]}, Precio con aumento: ${valorTransformado}`);
+    resultado += valorTransformado;
+  }
+
+  //console.log(`Total acumulado: ${resultado}`);
+  return  resultado;
+}
+
+-----------------------------------resuelto
+
+--------------------------------- devolver key : valor
+function retornarValor(objeto, clave) {
+  // Verificamos si la clave existe en el objeto
+  if (objeto.hasOwnProperty(clave)) {
+    return objeto[clave]; // Si existe, devolvemos el valor asociado a la clave
+  } else {
+    return "Desconocido"; // Si no existe, retornamos "Desconocido"
+  }
+}
+-------------------------------------resuelto
+
+---------------------------------variable con objeto literal(array)
+const calculadora = {
+  sumar: function(a, b) {
+    return a + b;
+  },
+  
+  restar: function(a, b) {
+    return a - b;
+  },
+  
+  multiplicar: function(a, b) {
+    return a * b;
+  },
+  
+  dividir: function(a, b) {
+    if (b === 0) {
+      return "Error: División por cero"; // Manejo de error para división por cero
+    }
+    return a / b;
+  }
+};
+
+// Ejemplo de uso:
+console.log(calculadora.sumar(5, 3));         // 8
+console.log(calculadora.restar(5, 3));        // 2
+console.log(calculadora.multiplicar(5, 3));   // 15
+console.log(calculadora.dividir(5, 3));        // 1.6666666666666667
+console.log(calculadora.dividir(5, 0));        // Error: División por cero
+
+-------------------------------------------resuelto
+
+------------------------- objeto literales con arrays y funciones
+persona = {
+  nombre: "Ana",
+  edad: 30,
+  presentarse: function() {
+    return "Hola, soy " + this.nombre + " y tengo " + this.edad + " años.";
+  },
+  cumplir: function() {
+    console.log("Antes de cumplir años: " + edad);
+    this.edad += 1;
+    console.log("Después de cumplir años: " + edad);
+  }
+};
+---------------------------------resuelto
+
+------------------------------- problema this parte 2
+codigo: punto = {
+            x: 0,
+            y: 0,
+            moverA: function(nuevox,nuevoy){
+                this.x=nuevox,
+                this.y=nuevoy
+            },
+            dondeEstoy: function(){
+                let ubicacion= "(" + this.x + ", " +  this.y + ")";
+                console.log(ubicacion);
+            }
+        }
+-------------------------------------resuelto
+
+--------------------------------funciones con parametros de funciones
+function saludar(nombre) {
+    return "Hola, " + nombre + "!";
+}
+function despedir(nombre) {
+    return "Adiós, " + nombre + "!";
+}
+function ejecutarSaludo(funcionSaludo, nombre) {		//declara un parametro como funcion, despues el nombre
+    return funcionSaludo(nombre);
+}
+console.log(ejecutarSaludo(saludar, "María")); // Muestra: Hola, María!
+
+console.log(ejecutarSaludo(despedir, "Juan")); // Muestra: Adiós, Juan!
+----------------------------------------resuelto
+
+------------------------------------ funciones flecha
+// Versión aún más concisa con retorno implícito
+const duplicarArrow3 = numero => numero * 2;
+
+// Función tradicional con múltiples parámetros
+function sumar(a, b) {
+    return a + b;
+}
+// Arrow function equivalente
+const sumarArrow = (a, b) => {
+    return a + b;
+};
+// Versión concisa con retorno implícito
+const sumarArrowConcisa = (a, b) => a + b;
+// Ejemplo con tres parámetros
+const calcularPromedio = (a, b, c) => (a + b + c) / 3;
+// Ejemplo con 2 parámetros y cuerpo de función
+const multiplicar = (a, b) => {
+    return a * b;
+};
+------------------------------resuelto
+
+------------------------ listras mutabilidad
+// Crear una lista
+let frutas = ['manzana', 'banana', 'cereza'];
+// Modificar un elemento existente
+frutas[1] = 'pera';
+console.log(frutas); // ['manzana', 'pera', 'cereza']
+// Agregar un elemento al final
+frutas.push('uva');
+console.log(frutas); // ['manzana', 'pera', 'cereza', 'uva']
+// Remover el último elemento
+let ultimaFruta = frutas.pop();
+console.log(frutas); // ['manzana', 'pera', 'cereza']
+console.log(ultimaFruta); // 'uva'
+// Agregar un elemento al inicio
+frutas.unshift('fresa');
+console.log(frutas); // ['fresa', 'manzana', 'pera', 'cereza']
+-------------------------------resuelto
+
+------------------------map con objeto 3
+function calcularEstadoEstudiantes(estudiantes) {
+    return estudiantes.map(estudiante => {
+        // Calcular la suma de las calificaciones
+        const suma = estudiante.calificaciones.reduce((acc, calificacion) => acc + calificacion, 0);
+        // Calcular el promedio y redondear a dos decimales
+        const promedio = (suma / estudiante.calificaciones.length).toFixed(2);
+        // Determinar el estado del estudiante
+        const estado = promedio >= 6 ? 'Aprobado' : 'Reprobado';
+
+        // Retornar un nuevo objeto que mantiene las propiedades originales del estudiante
+        return {
+              ...estudiante, // Usar el operador spread para mantener propiedades originales
+              promedio, // Dejarlo como cadena
+              estado // Añadir el estado
+              };
+    });
+}
+-------------------------------------resuelto
+
+
+
+
+
+
+
+
